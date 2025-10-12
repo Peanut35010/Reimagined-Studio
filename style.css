@@ -2,8 +2,16 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #111, #222);
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  margin: 0;
+}
+
+.container {
   text-align: center;
-  margin-top: 10%;
+  max-width: 400px; /* restrict content width */
 }
 
 h1 {
@@ -14,9 +22,9 @@ h1 {
 p {
   color: #ccc;
   font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-/* Base button style */
 button {
   background: #00ff99;
   color: #111;
@@ -26,11 +34,13 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+  max-width: 200px; /* prevent huge buttons */
+  width: 100%;
 }
 
 button:hover {
   background: #00cc7a;
   transform: scale(1.05);
-  box-shadow: 0 0 15px #00ff88; /* Glow effect */
-  color: #fff; /* Text turns white on hover */
+  box-shadow: 0 0 15px #00ff88;
+  color: #fff;
 }

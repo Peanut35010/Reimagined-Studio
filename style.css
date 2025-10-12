@@ -18,25 +18,21 @@ p {
 
 /* Base button style */
 button {
-  position: relative;
-  background: #00ff99;
-  color: #111;
+  background: #00cc66;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
   border: none;
-  padding: 12px 24px;
-  font-size: 1.1em;
-  border-radius: 8px;
   cursor: pointer;
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
-  z-index: 1;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-  background: #00cc7a;
   transform: scale(1.05);
   box-shadow: 0 0 15px #00ff88;
-  color: #fff; /* Text turns white on hover */
 }
+
 
 
 /* Rotating stroke effect */

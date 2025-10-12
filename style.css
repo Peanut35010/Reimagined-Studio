@@ -18,31 +18,19 @@ p {
 
 /* Base button style */
 button {
-  background: #00cc66;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 10px;
+  background: #00ff99;
+  color: #111;
   border: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Rotating stroke effect */
-button::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(90deg, #00ff88, #00cc7a, #00ff88);
+  padding: 12px 24px;
+  font-size: 1.1em;
   border-radius: 8px;
-  z-index: 0;
-  animation: rotate 2s linear infinite;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
 }
 
-button span {
-  position: relative;
-  z-index: 2; /* keeps text above the stroke */
+button:hover {
+  background: #00cc7a;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff88; /* Glow effect */
+  color: #fff; /* Text turns white on hover */
 }

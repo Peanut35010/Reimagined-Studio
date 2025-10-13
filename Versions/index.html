@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Versions | Reimagined Studio</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Login button (top right) */
+    .login-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #262626;
+      color: #ccc;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      transition: color 0.2s, transform 0.2s;
+    }
 
+    .login-button:hover {
+      color: #fff;
+      transform: translateX(3px);
+    }
+  </style>
+</head>
+<body>
+  <button class="login-button" onclick="window.location.href='login/index.html'">Login</button>
+
+  <div class="container">
+    <h1>Reimagined Studio</h1>
+    <p>Version 1.00</p>
+    <button onclick="window.location.href='https://peanut35010.github.io/Reimagined-Studio/login/'">
+      Whats New?
+    </button>
+  </div>
+</body>
+</html>
